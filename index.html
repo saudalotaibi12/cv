@@ -3,181 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saud Alotaibi | Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>My Professional CV</title>
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --light-bg: #f4f7f6;
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
+            background-color: var(--bg-color);
             color: var(--text-color);
-            background-color: #fff;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
+            line-height: 1.6;
             padding: 20px;
         }
 
-        h1 { font-size: 3rem; margin-bottom: 10px; }
-        h2 { color: var(--primary-color); border-bottom: 2px solid var(--accent-color); display: inline-block; margin-bottom: 20px; }
-
-        .profile-info { margin-bottom: 40px; }
-        .tagline { font-size: 1.2rem; opacity: 0.9; }
-
-        section { padding: 60px 0; }
-
-        .card {
-            background: var(--light-bg);
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
-        .card:hover { transform: translateY(-5px); }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .skill-item {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
+        header {
             text-align: center;
-            border: 1px solid #ddd;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
 
-        .contact-btn {
-            display: inline-block;
-            background: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 25px;
-            margin-top: 20px;
-            font-weight: 600;
-            transition: background 0.3s;
+        header h1 {
+            font-size: 2.5rem;
+            color: #111827;
+            margin-bottom: 10px;
         }
 
-        .contact-btn:hover { background: #2980b9; }
+        header p {
+            color: #4b5563;
+            font-size: 1.1rem;
+        }
 
-        .social-links a {
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: var(--primary-color);
             font-size: 1.5rem;
-            margin: 0 15px;
-            color: white;
-            transition: color 0.3s;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .social-links a:hover { color: #dcdde1; }
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h3 {
+            font-size: 1.2rem;
+            color: #1f2937;
+        }
+
+        .education-item p {
+            color: #6b7280;
+        }
+
+        .skills-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-badge {
+            background: #eff6ff;
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid #bfdbfe;
+        }
+
+        .btn-linkedin {
+            display: inline-flex;
+            align-items: center;
+            background-color: #0077b5;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-linkedin:hover {
+            background-color: #005582;
+        }
 
         footer {
             text-align: center;
-            padding: 40px;
-            background: var(--primary-color);
-            color: white;
-        }
-
-        .contact-info i { color: var(--accent-color); margin-right: 10px; }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
+            margin-top: 40px;
+            color: #9ca3af;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Saud Alotaibi</h1>
-            <p class="tagline">Computer Science Student | Tech Enthusiast</p>
-            <div class="social-links" style="margin-top: 20px;">
-                <a href="https://www.linkedin.com/in/SAUD-ALOTAIBI" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="tel:0562436352"><i class="fas fa-phone"></i></a>
-            </div>
-        </div>
-    </header>
-
     <div class="container">
-        <!-- About Section -->
-        <section id="about">
-            <h2>Professional Summary</h2>
-            <p>I am a dedicated Computer Science student at <strong>Shaqra University</strong>, currently in my <strong>6th semester</strong>. I have a strong passion for technology, software development, and networking. I am constantly seeking to expand my knowledge and apply my technical skills to solve real-world problems.</p>
-        </section>
+        <!-- الهيدر: الاسم والتخصص -->
+        <header>
+            <h1>muath alshabnan</h1>
+            <p>Computer Science / IT Student</p>
+        </header>
 
-        <!-- Education Section -->
-        <section id="education">
+        <!-- التعليم -->
+        <section>
             <h2>Education</h2>
-            <div class="card">
-                <h3>Bachelor of Computer Science</h3>
-                <p><strong>Shaqra University</strong></p>
-                <p>Status: Current Student (6th Semester)</p>
+            <div class="education-item">
+                <h3>Shaqra University</h3>
+                <p>Bachelor's Degree in Computer Science / Information Technology</p>
+                <p><strong>Expected Graduation:</strong> 2028</p>
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications">
-            <h2>Certifications & Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fab fa-python fa-2x" style="color: #3776ab;"></i>
-                    <h3>Python</h3>
-                    <p>Certified Programmer</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-html5 fa-2x" style="color: #e34f26;"></i>
-                    <h3>HTML5</h3>
-                    <p>Web Development</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-network-wired fa-2x" style="color: #2ecc71;"></i>
-                    <h3>Networking</h3>
-                    <p>Network Fundamentals</p>
-                </div>
+        <!-- الشهادات والمهارات -->
+        <section>
+            <h2>Certificates & Skills</h2>
+            <div class="skills-list">
+                <span class="skill-badge">Python Certified</span>
+                <span class="skill-badge">HTML5 Certified</span>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="card">
-                <p class="contact-info"><i class="fas fa-phone"></i> <strong>Phone:</strong> 0562436352</p>
-                <p class="contact-info"><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SAUD-ALOTAIBI" target="_blank" style="color: var(--accent-color);">linkedin.com/in/SAUD-ALOTAIBI</a></p>
-                <a href="mailto:your-email@example.com" class="contact-btn">Send me an Email</a>
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Saud Alotaibi. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+        <!-- التواصل وحساب لينكد إن -->
+        <section>
+            <h2>Connect With Me</h2>
+            <p style="margin-bottom: 15px;">Feel free to reach out for collaborations or professional opportunities.</p>
+            <!-- استبدل الرابط أدناه برابط حسابك الحقيقي في لينكد إن -->
+            <a href="https://www.linkedin.com/in/muath-altamimi-371b36409?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="btn-linkedin">
